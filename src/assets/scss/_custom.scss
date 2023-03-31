@@ -1,0 +1,182 @@
+// Here you can add other styles
+
+.modal-content-wrap {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.modal-list-group-item {
+  @extend .text-dark,
+    .border-left-0,
+    .border-right-0,
+    .border-bottom-0,
+    .rounded-0,
+    .d-flex,
+    .flex-row,
+    .align-items-center;
+
+  &:hover,
+  &:focus {
+    z-index: inherit;
+  }
+}
+.modal-content-wrap {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.modal-list-group-item {
+  @extend .text-dark,
+    .border-left-0,
+    .border-right-0,
+    .border-bottom-0,
+    .rounded-0,
+    .d-flex,
+    .flex-row,
+    .align-items-center;
+
+  &:hover,
+  &:focus {
+    z-index: inherit;
+  }
+}
+
+.sidebar-nav .badge {
+  padding: 0.5em 0.6em 0.3em 0.6em;
+  @extend .mt-0;
+}
+.sidebar{
+  background-color: #06283D !important;
+}
+.list-group-border-color {
+  border-color: $list-group-border-color !important;
+}
+
+.custom-control-input:disabled ~ .custom-control-label {
+  @extend .text-dark;
+}
+
+.vue-tags-input {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.vue-tags-input .ti-input {
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  border-color: #e4e7ea;
+  display: block;
+}
+.vue-tags-input .ti-tag {
+  @extend .rounded;
+  background: $light;
+  color: #5c6873;
+}
+
+.vue-tags-input .ti-autocomplete {
+  @extend .border, .rounded, .border-secondary, .mt-1, .p-1;
+}
+.vue-tags-input .ti-item.ti-selected-item {
+  @extend .rounded;
+  background-color: $light;
+  color: #5c6873;
+}
+
+#atlwdg-trigger {
+  z-index: 1020;
+}
+
+.blueimp-gallery {
+  background: rgba(85, 84, 84, 0.863) !important;
+}
+.blueimp-gallery > .close {
+  color: white !important;
+}
+.blueimp-gallery > .next {
+  color: white !important;
+}
+.blueimp-gallery > .prev {
+  color: white !important;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.archive-table tbody:nth-child(odd) {
+  background-color: lighten($light, 2%);
+  &:hover {
+    background-color: $light;
+  }
+}
+.archive-table tbody:nth-child(even) {
+  &:hover {
+    background-color: $light;
+  }
+}
+
+.form-control.is-invalid {
+  background: unset !important;
+}
+
+@media print {
+  .break-page {
+    page-break-after: always;
+  }
+  table {
+    page-break-inside: auto;
+    -fs-table-paginate: paginate;
+  }
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  thead {
+    display: table-header-group !important; /*repeat table headers on each page*/
+  }
+  tbody {
+    display: table-row-group !important;
+  }
+}
+.btn{
+  border-radius: 0.45rem;
+}
+.alert-danger{
+  background: #ffafaa !important;
+  border-color: #f48a84 !important;
+}
+
+.modal-footer, .modal-header{
+  background: $gray-100 !important;
+}
+
+.snotifyToast {
+  margin: 10px !important;
+  border-radius: 15px !important;
+}
+
+
+
+.snotify-icon {
+  max-height: 35px !important;
+  max-width: 35px !important;
+}
+
+.snotify-success{
+  background: $green !important;
+  .snotifyToast__inner {
+    min-height: 60px !important;
+    font-size: 16px !important;
+    padding: 8px 53px 5px 15px !important;
+  }
+}
+
+.snotify-error{
+  background: $red !important;
+  .snotifyToast__inner {
+    min-height: 60px !important;
+    font-size: 16px !important;
+    padding: 8px 53px 5px 15px !important;
+  }
+}

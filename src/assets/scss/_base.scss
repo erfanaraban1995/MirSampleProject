@@ -1,0 +1,406 @@
+//
+// Basic styles
+//
+.app-body {
+  overflow-x: unset;
+}
+
+.inherited-link {
+  color: inherit;
+
+  &:hover {
+    color: $link-hover-color  !important;
+  }
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.text-moremuted {
+  color: $gray-300;
+}
+
+.bg-disabled {
+  background-color: #e9ecef;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.thead-bg-table {
+  background-color: $gray-400;
+}
+
+.cursor-pointer:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.cricle-style li {
+  list-style-type: circle;
+}
+
+//--------
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
+// Links ----------
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+// cards
+.card {
+  margin-bottom: $spacer;
+  // border: $card-border-color;
+  // @extend .shadow-sm;
+}
+
+// tinymce ---------
+.tinymce-title {
+  background: $input-group-addon-bg;
+  color: $input-group-addon-color;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-width: 1px 1px 0;
+  @extend .rounded-top;
+}
+
+.tox {
+
+  .tox-menubar,
+  .tox-toolbar,
+  .tox-statusbar {
+    background-color: $input-group-addon-bg  !important;
+  }
+}
+
+.collapsed>.when-opened,
+:not(.collapsed)>.when-closed {
+  display: none;
+}
+
+// snotify
+
+.snotify-success .snotifyToast__body,
+.snotify-info .snotifyToast__body,
+.snotify-error .snotifyToast__body,
+.snotify-warning .snotifyToast__body {
+  color: #fff;
+  white-space: pre-line;
+}
+
+.snotify-confirm {
+  border-radius: 20px !important;
+  padding: 10px;
+  @extend .bg-white, .border;
+}
+
+.snotify-confirm>.snotifyToast__inner>.snotifyToast__body {
+  margin: 15px 0px !important;
+  @extend .text-dark;
+}
+
+.snotify-confirm>.snotifyToast__inner>.snotifyToast__title {
+  margin: 5px 0px !important;
+  font-weight: 500;
+  @extend .text-danger;
+}
+
+.snotify-confirm>.snotifyToast__buttons {
+  .danger {
+    color: #fff;
+    @extend .btn-danger;
+  }
+
+  .danger-outline{
+    color: $red !important;
+    @extend .btn-outline-danger;
+    border: 1px solid $red;
+    &:hover,
+    &:focus {
+      color: $white !important;
+      background-color: $red !important;
+      border-color: $red !important;
+    }
+  }
+
+  .success {
+    color: #fff;
+    @extend .btn-success;
+  }
+
+  .info {
+    color: #fff;
+    @extend .btn-info;
+  }
+
+  .secondary {
+    color: #000;
+    @extend .btn-secondary;
+  }
+
+  button {
+    border-radius: 8px;
+    // @extend .text-dark;
+  }
+}
+
+.bg-green {
+  background-color: #99b628;
+  border-color: #99b628;
+}
+
+.text-green {
+  color: #99b628;
+}
+
+.outline-green {
+  background-color: #ffffff !important;
+  border-color: #99b628 !important;
+  color: #99b628 !important;
+
+  &:hover,
+  &:focus {
+    color: #ffffff !important;
+    background-color: #99b628 !important;
+    border-color: #99b628 !important;
+  }
+}
+
+.snotify-centerCenter {
+  top: 38% !important;
+  left: calc(45% - 300px / 2) !important;
+}
+
+// form-tabs
+
+.form-tabs {
+  >div>.nav-tabs {
+    border-bottom: 3px solid transparent;
+
+    >.nav-item {
+      @extend .m-0;
+
+      >.nav-link {
+        @extend .rounded-bottom, .ml-1, .border-top-0, .border-left-0, .border-right-0;
+        border-bottom: 3px solid transparent;
+
+        &.active:hover {
+          background-color: lighten($color: $success, $amount: 50%);
+          border-bottom: 3px solid $success;
+        }
+
+        &.active {
+          background-color: lighten($color: $success, $amount: 50%);
+          border-bottom: 3px solid $success;
+          color: $dark;
+        }
+
+        &:hover {
+          background-color: $light;
+          border-color: transparent;
+          border-bottom: 3px solid darken($light, 15%);
+        }
+      }
+    }
+  }
+
+  >.tab-content {
+    margin-top: 0;
+    @extend .border-0;
+    background-color: $body-bg;
+
+    >.tab-pane {
+      @extend .pb-0, .px-0;
+    }
+  }
+}
+
+//Placeholder Color
+
+.form-control::placeholder {
+  color: #c5c5c5 !important;
+}
+
+.flex-basis-sm {
+  flex-basis: 50px !important;
+}
+
+.flex-basis-md {
+  flex-basis: 75px !important;
+}
+
+.flex-basis-lg {
+  flex-basis: 100px !important;
+}
+
+.flex-basis-xl {
+  flex-basis: 200px !important;
+}
+
+.flex-basis-sxl {
+  flex-basis: 250px !important;
+}
+
+.flex-basis-xxl {
+  flex-basis: 350px !important;
+}
+
+.rounded-right-0 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.rounded-left-0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.rounded-top-0 {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.rounded-bottom-0 {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+*[dir='rtl'] {
+  .required {
+
+    .lable::after,
+    .input-group-prepend .input-group-text::after {
+      content: '*';
+      color: red;
+      transform: translateY(-3px);
+      @extend .pr-1;
+    }
+
+    .card-header.required::after {
+      content: '*';
+      color: red;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+*[dir='ltr'] {
+  .required {
+
+    .lable::after,
+    .input-group-prepend .input-group-text::after {
+      content: '*';
+      color: red;
+      transform: translateY(-3px);
+      @extend .pl-1;
+    }
+
+    .card-header.required::after {
+      content: '*';
+      color: red;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.outline-0 {
+  outline: none !important;
+}
+
+.font-90 {
+  font-size: 90%;
+}
+
+.line-price {
+  position: relative;
+  @extend .px-1;
+
+  .line-through:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #ed1c24 !important;
+    position: absolute;
+    transform: rotate(-15deg) !important;
+    right: 0 !important;
+    left: 0;
+    top: 50%;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+// forms
+.required-input::after {
+  content: '*';
+  color: red;
+  position: absolute;
+  margin-top: -3px;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(236, 236, 236);
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(150, 150, 150);
+  border-radius: 20px;
+  min-height: 40px;
+}
+
+.flex-between-center {
+  @extend .d-flex, .justify-content-between, .align-items-center;
+}
+
+.marker-icon-top {
+  transform: translate(-50%, -100%);
+}
+
+.d-print {
+  display: none;
+}
+
+@media print {
+  .d-print {
+    display: block;
+  }
+}

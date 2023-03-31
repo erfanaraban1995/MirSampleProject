@@ -1,0 +1,71 @@
+table.label-table {
+  th,
+  td,
+  tr {
+    border: 1px solid #000 !important;
+  }
+}
+
+@media print {
+  .big-font {
+    font-size: 5em;
+  }
+  .big-trip-request {
+    font-size: 190px !important;
+    font-weight: bolder !important;
+  }
+  .summary-info-product {
+    font-size: 100px;
+  }
+  table.label-table {
+    font-size: 40px;
+    th,
+    td,
+    tr {
+      border: 4px solid #000 !important;
+    }
+  }
+
+  .b-table {
+    th,
+    td,
+    tr {
+      color: #000;
+
+      border: 1px solid #000 !important;
+    }
+  }
+
+  .print-font-medium {
+    font-size: 18px;
+  }
+  @page {
+    @bottom-left {
+      content: counter(page) ' of ' counter(pages);
+    }
+  }
+
+  .border-0 th {
+    border: none !important;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tfoot {
+    display: table-footer-group;
+  }
+
+  @media print {
+    svg {
+      display: none !important;
+    }
+  }
+}

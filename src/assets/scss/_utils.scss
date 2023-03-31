@@ -1,0 +1,109 @@
+.sticky-thead {
+  @media not print {
+    position: sticky;
+    top: 53px;
+    z-index: 900;
+  }
+}
+.border-transparent {
+  border-color: transparent;
+}
+.text-olive {
+  color: #455112;
+  border-color: #455112;
+}
+.text-yellow {
+  color: #846202;
+  border-color: #846202;
+}
+.fix-height {
+  height: 221px;
+}
+.dash-fix-button {
+  height: 127px;
+}
+.okala-color {
+  color: #ff7759;
+  border-color: #ff7759;
+}
+.okala-btn {
+  border-color: #ff7759;
+  background: #ffffff;
+  color: #ff7759;
+}
+.okala-btn:hover {
+  border-color: #ff7759;
+  background: #ff7759;
+  color: #ffffff;
+}
+
+.store-discount {
+  &.input-group {
+    .input-group-prepend .input-group-text {
+      border: 1px solid #99b629;
+      background: #e6ebd3;
+    }
+
+    input,
+    select {
+      border: 1px solid #99b629;
+    }
+
+    .input-group-append .input-group-text {
+      border: 1px solid #99b629;
+    }
+  }
+  select {
+    border: 1px solid #99b629;
+  }
+}
+.sticky-footer {
+  position: -webkit-sticky;
+  position: sticky !important;
+  bottom: 0 !important;
+  z-index: 950;
+}
+
+.opacity-25 {
+  opacity: 25% !important;
+}
+
+.opacity-50 {
+  opacity: 50% !important;
+}
+
+.opacity-75 {
+  opacity: 75% !important;
+}
+
+.opacity-100 {
+  opacity: 100% !important;
+}
+.form-controlize {
+  @extend .form-control;
+  border-color: transparent;
+  width: auto;
+  height: auto;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  color: unset;
+}
+.form-label {
+  @extend .form-control;
+  border-color: transparent;
+  width: auto;
+  height: auto;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.table-border {
+  border-collapse: collapse;
+}
+.border-bottom-dark {
+  border-bottom: 3px solid opacify($color: #000000, $amount: 0.5);
+}
+.border-bottom-darker {
+  border-bottom: 5px solid opacify($color: #000000, $amount: 1);
+}

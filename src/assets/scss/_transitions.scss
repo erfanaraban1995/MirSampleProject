@@ -1,0 +1,48 @@
+//slide ---------
+.slide-enter-active {
+  transform-origin: top;
+  animation: slide .5s;
+}
+.slide-leave-active {
+  transform-origin: top;
+  animation: slide .5s reverse;
+}
+@keyframes slide {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+//sortable ---------
+
+.sortable-item {
+  transform-origin: top;
+  transition: all .5s;
+}
+
+.sortable-enter, .sortable-leave-active {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+//bounce ---------
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,18 @@
+//
+// core-ui Fix
+//
+*[dir="rtl"] {
+  .sidebar-minimizer {
+    &::before {
+      right: auto;
+      left: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  .sidebar-minimized {
+    .sidebar-minimizer::before {
+      transform: rotate(0);
+    }
+  }
+}

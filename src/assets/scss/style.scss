@@ -1,0 +1,44 @@
+// If you want to override variables do it here
+@import 'variables';
+
+// Import styles
+@import '~@coreui/coreui/scss/coreui';
+
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+// bootstrap fixes
+@import 'bs-fix';
+
+// core-ui fixes
+@import 'core-fix';
+
+@import 'sidebar';
+
+// basic styles
+@import 'base';
+
+// vue transitions
+@import 'transitions';
+
+// If you want to add something do it here
+@import 'custom';
+
+// ie fixes
+@import 'ie-fix';
+
+// shared components
+@import 'shared-components';
+
+//plugins
+@import 'plugins';
+
+// persian fonts
+@import 'font';
+
+//utils
+@import 'utils';
+
+// components
+@import 'components';
+
+@import 'rollPrint'

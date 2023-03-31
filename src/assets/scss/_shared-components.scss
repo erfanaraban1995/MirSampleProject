@@ -1,0 +1,94 @@
+@import '../../components/shared/index';
+
+// TinyMc (HTML Editor)
+.tox-tiered-menu {
+  position: relative !important;
+  z-index: 1200;
+}
+*[dir='rtl'] {
+  .tox .tox-color-input {
+    span {
+      border-color: rgba(34, 47, 62, 0.2);
+      border-radius: 3px 0 0 3px;
+      border-width: 1px 0px 1px 1px;
+    }
+    .tox-textfield {
+      border-radius: 0 3px 3px 0;
+    }
+  }
+}
+
+// Auto Compelete
+
+.clear-vertical-center {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.vertical-center {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.autocomplete-result-position {
+  top: 102%;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  max-height: 300px !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+*[dir='rtl'] {
+  .clear-vertical-center {
+    left: 30px;
+    right: auto;
+  }
+  .vertical-center {
+    left: 10px;
+    right: auto;
+  }
+}
+
+// geopointEditor
+
+.leaflet-top {
+  z-index: 410 !important;
+}
+.geopoint-editor-menu {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 450;
+  display: flex;
+  align-items: stretch;
+  width: auto;
+}
+.geopoint-editor-menu-mode {
+  @extend .shadow-sm, .rounded, .px-1, .d-inline-block;
+  cursor: pointer;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.geopoint-editor-menu-polygons {
+  @extend .shadow-sm, .rounded, .px-1, .d-inline-block;
+  cursor: pointer;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+//noItem
+.no-item-class {
+  @extend .text-muted;
+  text-align: center;
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+}
